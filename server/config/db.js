@@ -1,6 +1,6 @@
 const mongoose = require("mongoose");
 try {
-  mongoose.connect("mongodb://localhost:27017/Ecommerce", {
+  mongoose.connect("mongodb+srv://Hiiu:Hieunguyenx24@cluster0.ozwelvg.mongodb.net/ecommerce", {
     useNewUrlParser: true,
     useUnifiedTopology: true,
     useCreateIndex: true,

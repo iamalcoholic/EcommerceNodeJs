@@ -46,7 +46,7 @@ const Sidebar = (props) => {
                 : ""
             }  px-4 py-4 hover:bg-gray-200 cursor-pointer`}
           >
-            My Orders
+            Giỏ hàng của tôi
           </div>
           <hr />
           <div
@@ -57,7 +57,7 @@ const Sidebar = (props) => {
                 : ""
             }  px-4 py-4 hover:bg-gray-200 cursor-pointer`}
           >
-            My Accounts
+            Tài khoản của tôi
           </div>
           <hr />
           <div
@@ -75,7 +75,7 @@ const Sidebar = (props) => {
                 : ""
             }  px-4 py-4 hover:bg-gray-200 cursor-pointer`}
           >
-            Setting
+            Cài đặt
           </div>
           <hr />
           <div
@@ -86,7 +86,7 @@ const Sidebar = (props) => {
                 : ""
             }  px-4 py-4 hover:bg-gray-200 cursor-pointer`}
           >
-            Logout
+            Đăng xuất
           </div>
         </div>
       </div>

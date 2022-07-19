@@ -89,7 +89,7 @@ const AllProduct = ({ products }) => {
                       </span>
                     </div>
                   </div>
-                  <div>{item.pPrice}.00$</div>
+                  <div>{item.pPrice} Pi</div>
                   <div className="absolute top-0 right-0 mx-2 my-2 md:mx-4">
                     <svg
                       className="w-5 h-5 md:w-6 md:h-6 cursor-pointer text-yellow-700"
@@ -112,7 +112,7 @@ const AllProduct = ({ products }) => {
           })
         ) : (
           <div className="col-span-2 md:col-span-3 lg:col-span-4 flex items-center justify-center py-24 text-2xl">
-            No product found
+            Không có sản phẩm nào
           </div>
         )}
       </section>

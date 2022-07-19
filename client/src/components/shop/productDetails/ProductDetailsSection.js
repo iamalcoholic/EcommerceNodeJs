@@ -177,7 +177,7 @@ const ProductDetailsSection = (props) => {
               <div className="text-2xl tracking-wider">{sProduct.pName}</div>
               <div className="flex justify-between items-center">
                 <span className="text-xl tracking-wider text-yellow-700">
-                  ${sProduct.pPrice}.00
+                  Trao đổi bằng {sProduct.pPrice} Pi
                 </span>
                 <span>
                   <svg
@@ -234,7 +234,7 @@ const ProductDetailsSection = (props) => {
                     quantitiy === sProduct.pQuantity && "text-red-500"
                   }`}
                 >
-                  Quantity
+                  Số lượng
                 </div>
                 {/* Quantity Button */}
                 {sProduct.pQuantity !== 0 ? (
@@ -390,7 +390,7 @@ const ProductDetailsSection = (props) => {
                       style={{ background: "#303031" }}
                       className={`px-4 py-2 text-white text-center cursor-pointer uppercase`}
                     >
-                      Add to cart
+                      Thêm vào giỏ hàng
                     </div>
                   )}
                 </Fragment>
@@ -402,7 +402,7 @@ const ProductDetailsSection = (props) => {
                       style={{ background: "#303031" }}
                       className={`px-4 py-2 text-white text-center cursor-not-allowed uppercase opacity-75`}
                     >
-                      In cart
+                      Đang trong giỏ hàng
                     </div>
                   ) : (
                     <div
@@ -410,7 +410,7 @@ const ProductDetailsSection = (props) => {
                       disabled={true}
                       className="px-4 py-2 text-white opacity-50 cursor-not-allowed text-center uppercase"
                     >
-                      Out of stock
+                     Hết hàng
                     </div>
                   )}
                 </Fragment>

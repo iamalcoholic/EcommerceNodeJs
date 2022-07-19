@@ -109,7 +109,7 @@ const CartModal = () => {
                           <div className="flex items-center justify-between">
                             <div className="flex items-center justify-between space-x-2">
                               <div className="text-sm text-gray-400">
-                                Quantity :
+                                Số lượng :
                               </div>
                               <div className="flex items-end">
                                 <span className="text-sm text-gray-200">
@@ -120,9 +120,9 @@ const CartModal = () => {
                             <div>
                               {" "}
                               <span className="text-sm text-gray-400">
-                                Subtotoal :
+                                Trao đổi bằng 
                               </span>{" "}
-                              ${subTotal(item._id, item.pPrice)}.00
+                              {subTotal(item._id, item.pPrice)} Pi
                             </div>{" "}
                             {/* SUbtotal Count */}
                           </div>
@@ -153,7 +153,7 @@ const CartModal = () => {
 
               {products === null && (
                 <div className="m-4 flex-col text-white text-xl text-center">
-                  No product in cart
+                 Không có sản phẩm nào trong giỏ hàng
                 </div>
               )}
             </div>
@@ -163,7 +163,7 @@ const CartModal = () => {
               onClick={(e) => cartModalOpen()}
               className="cursor-pointer px-4 py-2 border border-gray-400 text-white text-center cursor-pointer"
             >
-              Continue shopping
+              Tiếp tục mua sắm
             </div>
             {data.cartTotalCost ? (
               <Fragment>
@@ -175,7 +175,7 @@ const CartModal = () => {
                       cartModalOpen();
                     }}
                   >
-                    Checkout ${data.cartTotalCost}.00
+                    Tiến hành trao đổi ( {data.cartTotalCost} Pi )
                   </div>
                 ) : (
                   <div
@@ -193,13 +193,13 @@ const CartModal = () => {
                       });
                     }}
                   >
-                    Checkout ${data.cartTotalCost}.00
+                    Trao đổi {data.cartTotalCost} Pi
                   </div>
                 )}
               </Fragment>
             ) : (
               <div className="px-4 py-2 bg-black text-white text-center cursor-not-allowed">
-                Checkout
+                Trao đổi
               </div>
             )}
           </div>

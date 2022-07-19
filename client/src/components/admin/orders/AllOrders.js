@@ -137,7 +137,7 @@ const CategoryTable = ({ order, editOrder }) => {
           )}
         </td>
         <td className="hover:bg-gray-200 p-2 text-center">
-          ${order.amount}.00
+         Trao đổi bằng {order.amount} Pi
         </td>
         <td className="hover:bg-gray-200 p-2 text-center">
           {order.transactionId}

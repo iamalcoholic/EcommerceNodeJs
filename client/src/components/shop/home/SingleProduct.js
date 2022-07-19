@@ -95,7 +95,7 @@ const SingleProduct = (props) => {
                     </span>
                   </div>
                 </div>
-                <div>${item.pPrice}.00</div>
+                <div>Trao đổi bằng {item.pPrice} Pi</div>
                 {/* WhisList Logic  */}
                 <div className="absolute top-0 right-0 mx-2 my-2 md:mx-4">
                   <svg
@@ -138,7 +138,7 @@ const SingleProduct = (props) => {
         })
       ) : (
         <div className="col-span-2 md:col-span-3 lg:col-span-4 flex items-center justify-center py-24 text-2xl">
-          No product found
+          Không sản phẩm nào
         </div>
       )}
     </Fragment>
