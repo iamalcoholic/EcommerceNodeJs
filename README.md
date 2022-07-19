@@ -5,9 +5,10 @@ NPM and Node.js installed
 Database "ecommerce" created as MongoDB (localhost)
 
 ### Installing
-
+```
 cd client
- npm install
+npm install
+```
 ```
 cd server
 npm install
